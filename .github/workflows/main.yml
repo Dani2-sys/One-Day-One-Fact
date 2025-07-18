@@ -1,2 +1,2 @@
-- name: Save Google credentials
-  run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
+name: Save Google credentials
+run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
