@@ -1,16 +1,2 @@
-- name: Checkout repo
-  uses: actions/checkout@v3
-
-- name: Set up Python
-  uses: actions/setup-python@v4
-  with:
-    python-version: '3.x'
-
-- name: Install dependencies
-  run: pip install gspread oauth2client pandas
-
 - name: Save Google credentials
   run: echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
-
-- name: Update fact
-  run: python update_fact.py
